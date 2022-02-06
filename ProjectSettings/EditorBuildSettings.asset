@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/HanyangMarble.unity
+    guid: c2634bb94decb4b45a0b473b0e3be037
+  - enabled: 0
+    path: Assets/Scenes/Sample.unity
+    guid: 6154529c5adc92c46afd1dba293ca2aa
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: dc8ace271cf3f234ba95667b5867630e, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: aa6d275fe99a8b947b5bd390c39a0fda, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: fb3e671d5458abc4caba9d8944ee4571, type: 2}
