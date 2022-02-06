@@ -11,7 +11,7 @@ public class DiceScript : MonoBehaviour
     public IEnumerator Roll()
     {
         yield return null;
-        transform.position = new Vector3(-64.48f, -9.94f, -27.03f);  //주사위 던지기 위해 올리기
+        transform.position = new Vector3(-60f, -20f, -20f);  //주사위 던지기 위해 올리기
         transform.localEulerAngles = new Vector3(Random.Range(-90f, 90f), Random.Range(-90f, 90f), Random.Range(-90f, 90f));    //초기 랜덤 값
         RB.angularVelocity = Random.insideUnitSphere * Random.Range(-1000, 1000);   //랜덤 회전 속력
 
