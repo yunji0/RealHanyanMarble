@@ -16,8 +16,6 @@ public class DiceScript : MonoBehaviour
         RB.angularVelocity = Random.insideUnitSphere * Random.Range(-1000, 1000);   //랜덤 회전 속력
 
         yield return new WaitForSeconds(3); //주사위 값을 안전하게 찾기 위해 3초 대기
-
-        
         
         while (true)
         {
