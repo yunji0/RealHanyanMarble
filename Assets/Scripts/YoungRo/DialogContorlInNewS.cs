@@ -23,7 +23,14 @@ public class DialogContorlInNewS : MonoBehaviour
 
     public int cnt2 = 0;
 
-    //showDialogue trigger ¸¸µé°Í
+
+
+    //showDialogue trigger
+
+    private void Start()
+    {
+        ShowDialogue();
+    }
     public void ShowDialogue()
     {
 
