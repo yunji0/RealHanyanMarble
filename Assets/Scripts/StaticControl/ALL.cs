@@ -10,6 +10,7 @@ public class ALL : MonoBehaviour
     public static bool Interactflag;
     public static bool Idleflag;
     public static int Movenum;
+
     private void Awake()
     {
         Diceflag = false;
@@ -18,5 +19,7 @@ public class ALL : MonoBehaviour
         Interactflag = false;
         Idleflag = false;
         Movenum = 0;
+       
     }
+
 }
