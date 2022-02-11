@@ -6,10 +6,19 @@ public class OpenDialog : MonoBehaviour
 {
     public GameObject canvas;
     public DialogControl dialogscript;
+    public string nextScene;
     // Start is called before the first frame update
     private void OnTriggerStay(Collider other)
     {
-      
+        try
+        {
+            GameManagerScript.NextScene = nextScene;
+        }
+        catch (System.Exception)
+        {
+
+        }
+       
         if (Modecontrol.CurrentGameMode == "Isinteract")
         {
             if (other.gameObject.tag == "Player")
