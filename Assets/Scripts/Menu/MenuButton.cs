@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
-    
-    void Start()
+
+    public void HanyangMarbleScene() {
+
+        LoadingSceneControl.LoadScene("HanyangMarble");
+    }
+    public void HanyangUniversityScene()
     {
-        
+
+        LoadingSceneControl.LoadScene("HanyangMarble");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void End()
     {
-        
+        Application.Quit();
     }
 }

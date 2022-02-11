@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 [System.Serializable]
@@ -86,7 +87,15 @@ public class DialogControl : MonoBehaviour
         HideDialoge();
 
         ALL.Interactflag = true;
-        //ÈÄ¿¡ ¿ÀÇÂ ¾À
+        //ÈÄ¿¡ ¿ÀÇÂ ¾À GameManagerScript.NextSceneÀ¸·Î
+        try
+        {
+            LoadingSceneControl.LoadScene(GameManagerScript.NextScene);
+        }
+        catch (System.Exception)
+        {
+
+        }
     }
 
     public void NoButton() {
