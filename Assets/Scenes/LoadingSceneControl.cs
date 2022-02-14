@@ -37,7 +37,7 @@ public class LoadingSceneControl : MonoBehaviour
             }
             else
             {
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(3);
                 op.allowSceneActivation = true;
                 yield break;
             }
