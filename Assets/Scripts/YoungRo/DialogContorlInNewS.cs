@@ -39,7 +39,6 @@ public class DialogContorlInNewS : MonoBehaviour
         cnt2 = 0;
         isDialogue = true;
         NextDialogue();
-
     }
 
     private void NextDialogue()
@@ -47,7 +46,6 @@ public class DialogContorlInNewS : MonoBehaviour
         _Txt2.text = dialogues2[cnt2].dialogue;
         _Sprite2.sprite = dialogues2[cnt2].cg;
         cnt2++;
-
     }
 
     void HideDialoge()
@@ -74,7 +72,6 @@ public class DialogContorlInNewS : MonoBehaviour
                     ALL.Interactflag = true;// ÈÄ¿¡ ¿ÀÇÂ ¾À
                 }
             }
-
         }
 
     }
