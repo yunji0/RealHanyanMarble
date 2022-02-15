@@ -4,14 +4,32 @@ using UnityEngine;
 
 public class BoxControl : MonoBehaviour
 {
+    //LocomotionController loco;
     // Start is called before the first frame update
+    Vector3 a;
+
+    private void Update()
+    {
+        try
+        {
+          // loco = GameObject.Find("TeleportControl").GetComponent<LocomotionController>();
+          //  print(loco.CharacterController.transform.position);
+        }
+        catch (System.Exception)
+        {
+
+           
+        }
+      
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
+
         {
-            Vector3 vava2=this.transform.position;
-            vava2.y = 1.5f;
-            other.transform.position = vava2;
+            a = this.transform.position - other.transform.position;
+            a.y = 0f;
+            other.GetComponent<CharacterController>().Move(a);
         
         }
     }

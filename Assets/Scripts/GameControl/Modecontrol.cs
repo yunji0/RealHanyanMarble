@@ -56,9 +56,9 @@ public class Modecontrol : MonoBehaviour
             if (Modecontrol.CurrentGameMode == "Move")
             { ALL.Movenum = 0; }
         }
+       // if (Input.GetKeyDown(KeyCode.P)|| OVRInput.GetDown(OVRInput.Button.Two)) { this.GetComponent<CharacterController>().Move(new Vector3(0.0f, 1.5f, 20.0f)); }
 
-
-        if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.D))
             { CurrentGameMode = GameMode[ik];
             ik++;
             if (ik == 6) { ik = 1; }

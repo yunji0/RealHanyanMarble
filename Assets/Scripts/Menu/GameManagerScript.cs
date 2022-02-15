@@ -17,6 +17,7 @@ public class GameManagerScript : MonoBehaviour
     int number2;
     int number3;
 
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -58,6 +59,7 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.O))
         {
             LoadingSceneControl.LoadScene("HanyangMarble");
@@ -65,15 +67,17 @@ public class GameManagerScript : MonoBehaviour
         try
         {
             player = GameObject.FindGameObjectWithTag("Player");
-      
+            CharacterController char1 = player.GetComponent<CharacterController>();
+
            
             
           
             if (Modecontrol.CurrentGameMode == "Isinteract")
             {
-                PrePlayerPosition = player.transform.position;
                 
-                print(PrePlayerPosition);
+                PrePlayerPosition = player.transform.position;
+                PrePlayerPosition.y = 0;
+              //  print(PrePlayerPosition);
             }
        
                 if (IsBack == true)
@@ -81,7 +85,7 @@ public class GameManagerScript : MonoBehaviour
                 //player.transform.position -= PrePlayerPosition;
                 // player.transform.Translate(PrePlayerPosition, Space.World);
                 //player.transform.position.Set(PrePlayerPosition.position.x, PrePlayerPosition.position.y,PrePlayerPosition.position.z);
-                player.transform.position = -PrePlayerPosition/4;
+                char1.Move(PrePlayerPosition);
               
                     ALL.Idleflag = true;
                     IsBack = false;
@@ -95,7 +99,7 @@ public class GameManagerScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
-            player.transform.position = PrePlayerPosition;
+            IsBack = true;
         }
       
     }
