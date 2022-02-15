@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour
 {
-    public static Transform PrePlayerPosition;
+    public static Vector3 PrePlayerPosition;
   
     private string[] InteractionPlace = {"1", "2", "3", "4" }; //cngn
     public static List<string> Hib2b2Place = new List<string>();
@@ -19,7 +19,7 @@ public class GameManagerScript : MonoBehaviour
 
     private void Awake()
     {
-       
+        DontDestroyOnLoad(gameObject);
 
     }
 
@@ -58,27 +58,44 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            LoadingSceneControl.LoadScene("HanyangMarble");
+        }
         try
         {
-            player = GameObject.FindGameObjectWithTag("player");
-
+            player = GameObject.FindGameObjectWithTag("Player");
+      
+           
+            
+          
             if (Modecontrol.CurrentGameMode == "Isinteract")
             {
-                PrePlayerPosition.position = player.transform.position;
+                PrePlayerPosition = player.transform.position;
+                
+                print(PrePlayerPosition);
             }
-            else if (Modecontrol.CurrentGameMode == "Idle")
-            {
-                player.transform.position = PrePlayerPosition.position;
-            }
+       
+                if (IsBack == true)
+                {
+                //player.transform.position -= PrePlayerPosition;
+                // player.transform.Translate(PrePlayerPosition, Space.World);
+                //player.transform.position.Set(PrePlayerPosition.position.x, PrePlayerPosition.position.y,PrePlayerPosition.position.z);
+                player.transform.position = -PrePlayerPosition/4;
+              
+                    ALL.Idleflag = true;
+                    IsBack = false;
 
-            if (IsBack == true) {
-                ALL.Idleflag = true;
-                IsBack = false;
-            }
+                }
+      
         }
         catch (System.Exception)
         {
 
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            player.transform.position = PrePlayerPosition;
         }
       
     }

@@ -62,7 +62,7 @@ public class DialogContorlInNewS : MonoBehaviour
 
         if (isDialogue)
         {
-            if (OVRInput.GetDown(OVRInput.Button.Two) || Input.GetKeyDown(KeyCode.H))
+            if (Input.GetKeyDown(KeyCode.H))
             {
                 if (cnt2 < dialogues2.Length)
                 { NextDialogue(); }

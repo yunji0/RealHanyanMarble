@@ -23,7 +23,7 @@ public class OpenDialog : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             { canvas.SetActive(true);
-
+                
                 if (dialogscript.cnt == 0)
                 { dialogscript.ShowDialogue(); }
                 
@@ -33,5 +33,5 @@ public class OpenDialog : MonoBehaviour
         else { canvas.SetActive(false); }
     }
 
-    
+
 }

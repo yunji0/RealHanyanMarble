@@ -63,6 +63,6 @@ public class Modecontrol : MonoBehaviour
             ik++;
             if (ik == 6) { ik = 1; }
                 }
-        print(CurrentGameMode);
+      
     }
 }
