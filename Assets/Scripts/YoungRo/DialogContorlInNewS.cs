@@ -69,7 +69,6 @@ public class DialogContorlInNewS : MonoBehaviour
                 else
                 {
                     HideDialoge();
-                    ALL.Interactflag = true;// ÈÄ¿¡ ¿ÀÇÂ ¾À
                 }
             }
         }
