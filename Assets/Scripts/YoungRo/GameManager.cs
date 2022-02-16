@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     // Á¾·á cavas
     public GameObject EndCav;
 
-
     // Start is called before the first frame update
     void Start()
     {
