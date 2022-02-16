@@ -9,24 +9,14 @@ public class BoxControl : MonoBehaviour
     Vector3 a;
     private AudioSource Click;
     public AudioClip Shuck;
+ 
     void Start()
     {
         Click = GetComponent<AudioSource>();
+       
+        
     }
-    private void Update()
-    {
-        try
-        {
-          // loco = GameObject.Find("TeleportControl").GetComponent<LocomotionController>();
-          //  print(loco.CharacterController.transform.position);
-        }
-        catch (System.Exception)
-        {
-
-           
-        }
-      
-    }
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -37,7 +27,10 @@ public class BoxControl : MonoBehaviour
             other.GetComponent<CharacterController>().Move(a);
             Click.clip = Shuck;
             Click.Play();
-
+           
+          
         }
     }
+
+   
 }

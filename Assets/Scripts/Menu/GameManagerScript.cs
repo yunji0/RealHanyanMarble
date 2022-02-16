@@ -7,8 +7,9 @@ public class GameManagerScript : MonoBehaviour
 {
     public static Vector3 PrePlayerPosition;
   
-    private string[] InteractionPlace = {"1", "2", "3", "4" }; //cngn
+    private string[] InteractionPlace = {"경상대","언정대","국문대","복지관","학생회관","공학대","과기대","셔틀콕","소융대","약학대","창보","학정","호공","본관","예체능대","디대","대운동장","기숙사","컨퍼런스홀" }; //cngn
     public static List<string> Hib2b2Place = new List<string>();
+    int Hib2b2cnt = 0;
     public static string CurrentScene = "Menu";
     public static string NextScene;
     public static bool IsBack = false;
@@ -17,9 +18,11 @@ public class GameManagerScript : MonoBehaviour
     int number2;
     int number3;
 
-
+    
     private void Awake()
     {
+        Hib2b2cnt = 0;
+        Hib2b2Place.Clear();
         DontDestroyOnLoad(gameObject);
 
     }
