@@ -7,11 +7,17 @@ public class DiceScript : MonoBehaviour
     public Rigidbody RB;
     public Transform[] Nums;
     public int num=0;
+    private AudioSource Click;
 
+    private void Start()
+    {
+        Click = GetComponent<AudioSource>();
+    }
     public IEnumerator Roll()
     {
         yield return null;
         transform.position = new Vector3(300, 5, 300);  //주사위 던지기 위해 올리기
+        Click.Play();
         transform.localEulerAngles = new Vector3(Random.Range(-90f, 90f), Random.Range(-90f, 90f), Random.Range(-90f, 90f));    //초기 랜덤 값
         RB.angularVelocity = Random.insideUnitSphere * Random.Range(-1000, 1000);   //랜덤 회전 속력
 

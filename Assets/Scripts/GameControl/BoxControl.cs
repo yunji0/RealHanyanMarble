@@ -7,7 +7,12 @@ public class BoxControl : MonoBehaviour
     //LocomotionController loco;
     // Start is called before the first frame update
     Vector3 a;
-
+    private AudioSource Click;
+    public AudioClip Shuck;
+    void Start()
+    {
+        Click = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         try
@@ -30,7 +35,9 @@ public class BoxControl : MonoBehaviour
             a = this.transform.position - other.transform.position;
             a.y = 0f;
             other.GetComponent<CharacterController>().Move(a);
-        
+            Click.clip = Shuck;
+            Click.Play();
+
         }
     }
 }
