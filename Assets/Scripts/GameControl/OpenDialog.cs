@@ -7,7 +7,13 @@ public class OpenDialog : MonoBehaviour
     public GameObject canvas;
     public DialogControl dialogscript;
     public string nextScene;
+    private AudioSource Click;
+    public AudioClip ZZan;
     // Start is called before the first frame update
+    void Start()
+    {
+        Click = GetComponent<AudioSource>();
+    }
     private void OnTriggerStay(Collider other)
     {
         try
@@ -33,5 +39,9 @@ public class OpenDialog : MonoBehaviour
         else { canvas.SetActive(false); }
     }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        Click.clip = ZZan;
+        Click.Play();
+    }
 }
