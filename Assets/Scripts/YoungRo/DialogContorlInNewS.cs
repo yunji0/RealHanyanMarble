@@ -14,6 +14,7 @@ public class Dialogue2
     public Sprite cg2;
 
 }
+
 public class DialogContorlInNewS : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _Sprite2;
