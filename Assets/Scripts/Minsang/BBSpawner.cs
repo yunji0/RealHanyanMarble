@@ -1,18 +1,40 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BBSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private BBFSM[] moles;
+
+    [SerializeField]
+    private float spawnTime;
+
+    public Hammer hammer;
+
+    public int gameEndPoint;
+    private bool isGame = true;
+
+    public void Start()
     {
-        
+        StartCoroutine("SpawnMole");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (hammer.point >= gameEndPoint)
+        {
+            isGame = false;
+        }
+    }
+
+    private IEnumerator SpawnMole()
+    {
+        while (isGame)
+        {
+            int index = Random.Range(0, moles.Length);
+            moles[index].ChangeState(MoleState.MoveUp);
+
+            yield return new WaitForSeconds(spawnTime);
+        }
     }
 }

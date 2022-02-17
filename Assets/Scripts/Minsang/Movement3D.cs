@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement3D : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private float moveSpeed = 0;
+    private Vector3 moveDirection = Vector3.zero;
+
+    private void Update()
     {
-        
+        transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MoveTo(Vector3 direction)
     {
-        
+        moveDirection = direction;
     }
+
 }
