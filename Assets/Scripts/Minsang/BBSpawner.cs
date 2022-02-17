@@ -9,7 +9,7 @@ public class BBSpawner : MonoBehaviour
     [SerializeField]
     private float spawnTime;
 
-    public Hammer hammer;
+    public HitProcess hitProcess;
 
     public int gameEndPoint;
     private bool isGame = true;
@@ -21,7 +21,7 @@ public class BBSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (hammer.point >= gameEndPoint)
+        if (hitProcess.point >= gameEndPoint)
         {
             isGame = false;
         }
