@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &2869843
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &88694885
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &251350368
@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &372738904
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!114 &372738907
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &586296295
@@ -1098,7 +1098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1150,6 +1150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+--- !u!4 &587654369 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
+  m_PrefabInstance: {fileID: 587654368}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &729486228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,7 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &824670573
@@ -1397,7 +1402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &827739860
@@ -1522,7 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &847646074
@@ -1572,7 +1577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!114 &847646077
@@ -1697,7 +1702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!114 &862960525
@@ -1799,12 +1804,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888083346}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 587654369}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &888083348
 MonoBehaviour:
@@ -1944,7 +1949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &1029871148
@@ -2259,7 +2264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &1284319775
@@ -2419,7 +2424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!1 &1375307860
@@ -2644,7 +2649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!114 &1634013019
@@ -2783,7 +2788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!114 &1698598215
@@ -2905,7 +2910,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1847948882
 GameObject:
@@ -3049,7 +3054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!114 &1855673444
@@ -3174,7 +3179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!114 &1922930243
@@ -3299,7 +3304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!114 &1929592712
@@ -3424,7 +3429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb03cb2402ecc3f4db32d11ef48451fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeOnGround: 0.5
+  waitTimeOnGround: 1
   limitUnderZ: -7.8
   limitOnZ: -8.2
 --- !u!114 &1996460109
@@ -5978,7 +5983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0950df82e7936c84983497630bde5b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: 0.1
+  Acceleration: 0
   Damping: 0.3
   BackAndSideDampen: 0.5
   JumpForce: 0.3
@@ -6274,7 +6279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2552733753989038206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.83, y: 1, z: -12.23}
+  m_LocalPosition: {x: -4.83, y: 1, z: -11.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2552733753989209172}
@@ -7124,7 +7129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.79, y: -0.13}
+  m_AnchoredPosition: {x: -2.42, y: -0.13}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!33 &5769141308502317404
