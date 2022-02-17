@@ -26,15 +26,17 @@ public class HitProcess : MonoBehaviour
             point++;
             mole.ChangeState(MoleState.UnderGround);
 
+            transform.position = new Vector3(target.position.x, target.position.y, target.position.z);
             GameObject clone = Instantiate(hitEffectPrefab, transform.position, Quaternion.identity);
             ParticleSystem.MainModule main = clone.GetComponent<ParticleSystem>().main;
             main.startColor = mole.GetComponent<MeshRenderer>().material.color;
-
         }
     }
 
+    /*
     private void Update()
     {
         print(point);
     }
+    */
 }
