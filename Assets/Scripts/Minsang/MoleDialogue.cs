@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class MDialogue
@@ -14,6 +15,9 @@ public class MoleDialogue : MonoBehaviour
 {
     [SerializeField]
     private BBSpawner spawner;
+
+    [SerializeField]
+    private GameObject BBContainer;
 
     [SerializeField]
     private Text text_Dialogue;
@@ -43,6 +47,7 @@ public class MoleDialogue : MonoBehaviour
     {
         if (countDialogue == 4)
         {
+            BBContainer.gameObject.SetActive(true);
             button.gameObject.SetActive(false);
 
             if (spawner.isGame == false)
@@ -56,6 +61,16 @@ public class MoleDialogue : MonoBehaviour
         else if (countDialogue == dialogue.Length)
         {
             button.gameObject.SetActive(false);
+
+            try
+            {
+                GameManagerScript.IsBack = true;
+                LoadingSceneControl.LoadScene("HanyangMarble");
+            }
+            catch (System.Exception)
+            {
+
+            }
         }
     }
 }
