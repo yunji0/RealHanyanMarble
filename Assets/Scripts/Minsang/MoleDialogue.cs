@@ -17,6 +17,9 @@ public class MoleDialogue : MonoBehaviour
     private BBSpawner spawner;
 
     [SerializeField]
+    private GameObject BBContainer;
+
+    [SerializeField]
     private Text text_Dialogue;
 
     [SerializeField]
@@ -26,8 +29,6 @@ public class MoleDialogue : MonoBehaviour
 
     [SerializeField]
     private MDialogue[] dialogue;
-
-    public GameObject BBContainer;
 
     public void NextDialogue()
     {
