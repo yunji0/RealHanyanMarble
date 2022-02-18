@@ -861,7 +861,6 @@ MonoBehaviour:
   - {fileID: 1634013018}
   spawnTime: 1
   hitProcess: {fileID: 1819649948}
-  moleDialogue: {fileID: 1110103136}
   gameEndPoint: 10
   isGame: 1
 --- !u!1 &552714617
@@ -1037,7 +1036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &586296296
 Transform:
   m_ObjectHideFlags: 0
@@ -1986,7 +1985,6 @@ MonoBehaviour:
   spawner: {fileID: 464917765}
   text_Dialogue: {fileID: 3336713540289219887}
   button: {fileID: 2052105012}
-  countDialogue: 0
   dialogue:
   - dialogue: "\uC6B0\uB9AC \uD559\uC0DD\uB4E4\uC774\n\uC5F4\uC2EC\uD788 \uACF5\uBD80\uD558\uB294
       \uACF3\uC774\uC9C0"
@@ -1997,6 +1995,7 @@ MonoBehaviour:
   - dialogue: "10\uBC88\uB9CC \uC7A1\uC544\uC8FC\uC790 !"
   - dialogue: "\uC640 \uACE0\uB9C8\uC6CC !\n\uB355\uBD84\uC5D0 \uC870\uC6A9\uD574\uC84C\uC5B4"
   - dialogue: "\uADF8\uB7FC \uC798 \uAC00~"
+  BBContainer: {fileID: 586296295}
 --- !u!114 &1110103137
 MonoBehaviour:
   m_ObjectHideFlags: 0

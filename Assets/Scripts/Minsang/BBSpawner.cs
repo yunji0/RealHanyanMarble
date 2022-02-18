@@ -10,7 +10,6 @@ public class BBSpawner : MonoBehaviour
     private float spawnTime;
 
     public HitProcess hitProcess;
-    public MoleDialogue moleDialogue;
 
     public int gameEndPoint;
     public bool isGame = true;
@@ -19,16 +18,11 @@ public class BBSpawner : MonoBehaviour
 
     public void Start()
     {
-        //StartCoroutine("SpawnMole");
+        StartCoroutine("SpawnMole");
     }
 
     private void Update()
     {
-        if(moleDialogue.countDialogue >= 2)
-        {
-            StartCoroutine("SpawnMole");
-        }
-
         if (hitProcess.point >= gameEndPoint)
         {
             isGame = false;

@@ -22,10 +22,12 @@ public class MoleDialogue : MonoBehaviour
     [SerializeField]
     private Button button;
 
-    public int countDialogue = 0;
+    private int countDialogue = 0;
 
     [SerializeField]
     private MDialogue[] dialogue;
+
+    public GameObject BBContainer;
 
     public void NextDialogue()
     {
@@ -42,6 +44,11 @@ public class MoleDialogue : MonoBehaviour
 
     private void Update()
     {
+        if(countDialogue == 2)
+        {
+            BBContainer.gameObject.SetActive(true);
+        }
+
         if (countDialogue == 4)
         {
             button.gameObject.SetActive(false);
