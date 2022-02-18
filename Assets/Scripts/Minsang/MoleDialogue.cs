@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class MDialogue
@@ -21,7 +22,7 @@ public class MoleDialogue : MonoBehaviour
     [SerializeField]
     private Button button;
 
-    private int countDialogue = 0;
+    public int countDialogue = 0;
 
     [SerializeField]
     private MDialogue[] dialogue;
@@ -56,6 +57,16 @@ public class MoleDialogue : MonoBehaviour
         else if (countDialogue == dialogue.Length)
         {
             button.gameObject.SetActive(false);
+
+            try
+            {
+                GameManagerScript.IsBack = true;
+                LoadingSceneControl.LoadScene("HanyangMarble");
+            }
+            catch (System.Exception)
+            {
+
+            }
         }
     }
 }

@@ -861,6 +861,7 @@ MonoBehaviour:
   - {fileID: 1634013018}
   spawnTime: 1
   hitProcess: {fileID: 1819649948}
+  moleDialogue: {fileID: 1110103136}
   gameEndPoint: 10
   isGame: 1
 --- !u!1 &552714617
@@ -1985,13 +1986,14 @@ MonoBehaviour:
   spawner: {fileID: 464917765}
   text_Dialogue: {fileID: 3336713540289219887}
   button: {fileID: 2052105012}
+  countDialogue: 0
   dialogue:
-  - dialogue: "\uCE5C\uAD6C\uB4E4\uC774 \uC5F4\uC2EC\uD788\n\uACF5\uBD80\uD558\uB294
+  - dialogue: "\uC6B0\uB9AC \uD559\uC0DD\uB4E4\uC774\n\uC5F4\uC2EC\uD788 \uACF5\uBD80\uD558\uB294
       \uACF3\uC774\uC9C0"
   - dialogue: "\uADF8\uB7F0\uB370 \uC2DC\uB044\uB7FD\uAC8C \uD558\uB294\n\uD558\uC774\uBE44\uBE44\uB97C
       \uC7A1\uC544\uC918 !"
-  - dialogue: "\uCC3D\uBB38\uC5D0 \uB098\uC624\uB294 \uBE44\uBE44\uB97C\nA \uBC84\uD2BC\uC73C\uB85C
-      \uC7A1\uC744 \uC218 \uC788\uC5B4"
+  - dialogue: "\uCC3D\uBB38\uC5D0 \uB098\uC624\uB294 \uD558\uC774\uBE44\uBE44\uB97C\nA
+      \uBC84\uD2BC\uC73C\uB85C \uC7A1\uC744 \uC218 \uC788\uC5B4"
   - dialogue: "10\uBC88\uB9CC \uC7A1\uC544\uC8FC\uC790 !"
   - dialogue: "\uC640 \uACE0\uB9C8\uC6CC !\n\uB355\uBD84\uC5D0 \uC870\uC6A9\uD574\uC84C\uC5B4"
   - dialogue: "\uADF8\uB7FC \uC798 \uAC00~"
@@ -2038,7 +2040,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142602261}
   m_LocalRotation: {x: -0, y: -0.34483573, z: -0, w: 0.93866307}
-  m_LocalPosition: {x: -8.11, y: 1, z: -11.38}
+  m_LocalPosition: {x: -7.53, y: 1, z: -10.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1110103135}
@@ -6615,7 +6617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2552733753989038206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.77, y: 1, z: -12.69}
+  m_LocalPosition: {x: -4.77, y: 1, z: -12.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2552733753989209172}
