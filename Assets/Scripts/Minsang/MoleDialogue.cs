@@ -45,13 +45,9 @@ public class MoleDialogue : MonoBehaviour
 
     private void Update()
     {
-        if(countDialogue == 2)
-        {
-            BBContainer.gameObject.SetActive(true);
-        }
-
         if (countDialogue == 4)
         {
+            BBContainer.gameObject.SetActive(true);
             button.gameObject.SetActive(false);
 
             if (spawner.isGame == false)
