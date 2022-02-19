@@ -70,13 +70,15 @@ public class MoleDialogue : MonoBehaviour
                 }
                 if (GameManagerScript.GetHib2b2Place.Count > 2)
                 {
-
                     var GM = GameObject.FindGameObjectWithTag("GM");
                     Destroy(GM);
                     LoadingSceneControl.LoadScene("Menu");  //하이비비 3개가 모이면 게임 종료하여 메뉴로 복귀, 추후에 시간 남으면 종료만을 위한 씬 구성.
                 }
                 else
-                { LoadingSceneControl.LoadScene("HanyangMarble"); } //하이비비가 아직 3개 미만이면 다시 게임으로 복귀
+                {
+                    GameManagerScript.IsBack = true;
+                    LoadingSceneControl.LoadScene("HanyangMarble");
+                } //하이비비가 아직 3개 미만이면 다시 게임으로 복귀
 
             }
             catch (System.Exception)
