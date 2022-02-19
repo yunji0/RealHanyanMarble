@@ -6,11 +6,13 @@ public class BiBiCollision : MonoBehaviour
 {
 
     public GameObject EndCav;
+    public GameObject BiBi;
 
     // Start is called before the first frame update
     void Start()
     {
         EndCav.SetActive(false);
+        BiBi.SetActive(true);
     }
 
 
@@ -20,6 +22,7 @@ public class BiBiCollision : MonoBehaviour
         if (other.gameObject.name == "GetPostion")
         {
             EndCav.SetActive(true);
+            BiBi.SetActive(false);
         }
     }
 
