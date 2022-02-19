@@ -90,6 +90,8 @@ public class DialogControl : MonoBehaviour
         //ÈÄ¿¡ ¿ÀÇÂ ¾À GameManagerScript.NextSceneÀ¸·Î
         try
         {
+
+
             LoadingSceneControl.LoadScene(GameManagerScript.NextScene);
         }
         catch (System.Exception)
