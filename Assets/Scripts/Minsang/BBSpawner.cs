@@ -12,7 +12,9 @@ public class BBSpawner : MonoBehaviour
     public HitProcess hitProcess;
 
     public int gameEndPoint;
-    private bool isGame = true;
+    public bool isGame = true;
+
+    //public GameObject trophy;
 
     public void Start()
     {
@@ -24,6 +26,7 @@ public class BBSpawner : MonoBehaviour
         if (hitProcess.point >= gameEndPoint)
         {
             isGame = false;
+            //trophy.gameObject.SetActive(true);
         }
     }
 
