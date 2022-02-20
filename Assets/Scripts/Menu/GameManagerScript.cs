@@ -9,7 +9,8 @@ public class GameManagerScript : MonoBehaviour
   
     private string[] InteractionPlace = {"경상대","언정대","국문대","복지관","학생회관","공학대","과기대","셔틀콕","소융대","약학대","창보","학정","호공","본관","예체능대","디대","대운동장","기숙사","컨퍼런스홀" }; //cngn
     public static List<string> Hib2b2Place = new List<string>();
-    int Hib2b2cnt = 0;
+    public static List<string> GetHib2b2Place = new List<string>();
+   
     public static string CurrentScene = "Menu";
     public static string NextScene;
     public static bool IsBack = false;
@@ -21,8 +22,9 @@ public class GameManagerScript : MonoBehaviour
     
     private void Awake()
     {
-        Hib2b2cnt = 0;
+        
         Hib2b2Place.Clear();
+        GetHib2b2Place.Clear();
         DontDestroyOnLoad(gameObject);
 
     }
@@ -100,10 +102,6 @@ public class GameManagerScript : MonoBehaviour
         {
 
         }
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            IsBack = true;
-        }
-      
+
     }
 }
