@@ -651,80 +651,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8782990924743517131, guid: f44458a71d92747a39dd1dfb9793a9c3, type: 3}
   m_PrefabInstance: {fileID: 1012297501}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1038519593
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1495381005}
-    m_Modifications:
-    - target: {fileID: 1418974482666781334, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_Name
-      value: Rail_stand_grass
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 9.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
---- !u!4 &1038519594 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1418974482667001526, guid: 1933d08a8a6534b5993972c9ed9a4279, type: 3}
-  m_PrefabInstance: {fileID: 1038519593}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1087993132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1300,7 +1226,7 @@ Transform:
   - {fileID: 5441135745611727312}
   - {fileID: 2163844476942608417}
   - {fileID: 4473858344275891537}
-  - {fileID: 1038519594}
+  - {fileID: 1418974482610215839}
   - {fileID: 1583085394}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1926,6 +1852,87 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &1418974482610215839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418974482610321343}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.46, z: 9.03}
+  m_LocalScale: {x: 5, y: 1.5000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1495381005}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1418974482610321343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1418974482610215839}
+  - component: {fileID: 1418974482611510207}
+  - component: {fileID: 1418974482612512255}
+  m_Layer: 0
+  m_Name: Rail_stand_grass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!33 &1418974482611510207
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418974482610321343}
+  m_Mesh: {fileID: 4300050, guid: 4e658f52b1fe04761b615de952e83625, type: 3}
+--- !u!23 &1418974482612512255
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418974482610321343}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: af02ee09b483647a9b781dad2932ac3d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!23 &1711813856166420632
 MeshRenderer:
   m_ObjectHideFlags: 0
