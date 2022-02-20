@@ -3342,6 +3342,7 @@ MonoBehaviour:
       !"
   - dialogue: "\uC640 \uACE0\uB9C8\uC6CC !\n\uB355\uBD84\uC5D0 \uC870\uC6A9\uD574\uC84C\uC5B4"
   - dialogue: "\uADF8\uB7FC \uC798 \uAC00~"
+  - dialogue: "\uADF8\uB7FC \uC798 \uAC00~"
 --- !u!114 &1110103137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3674,7 +3675,7 @@ Transform:
   m_LocalScale: {x: 1600, y: 1600.0001, z: 1}
   m_Children: []
   m_Father: {fileID: 1399555804}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &1235208608
 PrefabInstance:
@@ -4301,8 +4302,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 933758849}
   - {fileID: 1222629727}
+  - {fileID: 933758849}
   - {fileID: 78513740}
   - {fileID: 279012045}
   - {fileID: 592034640}
