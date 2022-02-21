@@ -12,13 +12,13 @@ public class Y_BBFSM : MonoBehaviour
     [SerializeField]
     private float limitOnY;
 
-    private Movement3D movement3D;
+    private Y_Movement3D movement3D;
 
     public Y_MoleState Y_MoleState { private set; get; }
 
     private void Awake()
     {
-        movement3D = GetComponent<Movement3D>();
+        movement3D = GetComponent<Y_Movement3D>();
         ChangeState(Y_MoleState.UnderGround);
     }
 
