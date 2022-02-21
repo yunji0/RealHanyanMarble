@@ -8,7 +8,7 @@ public class MenuButton : MonoBehaviour
 
     public void HanyangMarbleScene() {
 
-        LoadingSceneControl.LoadScene("HanyangMarble");
+        LoadingSceneControl.LoadScene("RuleExplain");
     }
     public void HanyangUniversityScene()
     {
