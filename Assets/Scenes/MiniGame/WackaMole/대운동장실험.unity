@@ -11440,7 +11440,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC5B4\uC11C\uC640 !\n\uC5EC\uAE30\uB294 \uD559\uC220 \uC815\uBCF4\uAD00\uC774\uC57C
+  m_Text: "\uC5B4\uC11C\uC640 !\n\uC5EC\uAE30\uB294 \uB300\uC6B4\uB3D9\uC7A5\uC774\uC57C
     !"
 --- !u!224 &6253413052118397963
 RectTransform:
@@ -14113,43 +14113,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9054753668845745461}
-  m_LocalRotation: {x: -0, y: 0.5924911, z: -0, w: 0.80557704}
-  m_LocalPosition: {x: -7.527, y: 1.57, z: 3.133}
+  m_LocalRotation: {x: -0, y: 0.5556757, z: -0, w: 0.83139914}
+  m_LocalPosition: {x: -7.5, y: 1.57, z: 3.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9054753668943272831}
   - {fileID: 3529024230168524539}
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 72.668, z: 0}
---- !u!114 &9054753668943272768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9054753668943272827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 264dfe50b4d7de349b4865a905cfb424, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawner: {fileID: 0}
-  BBContainer: {fileID: 586296295}
-  text_Dialogue: {fileID: 6045679210268279311}
-  button: {fileID: 9054753669085211668}
-  dialogue:
-  - dialogue: "\uC6B0\uB9AC \uC5D0\uB9AC\uCE74 \uD559\uC0DD\uB4E4\uC774\n\uC5F4\uC2EC\uD788
-      \uACF5\uBD80\uD558\uB294 \uACF3\uC774\uC9C0"
-  - dialogue: "\uADF8\uB7F0\uB370 \uACF5\uBD80\uB97C \uBC29\uD574\uD558\uACE0 \uC788\uB294\n\uD558\uC774\uBE44\uBE44\uB97C
-      \uC7A1\uC544\uC918 !"
-  - dialogue: "\uCC3D\uBB38\uC5D0 \uB098\uC624\uB294 \uD558\uC774\uBE44\uBE44\uB97C\nA
-      \uBC84\uD2BC\uC73C\uB85C \uC7A1\uC744 \uC218 \uC788\uC5B4"
-  - dialogue: "\uC9C0\uAE08\uBD80\uD130 \uC2DC~\uC791\n10\uBC88\uB9CC \uC7A1\uC544\uC8FC\uC790
-      !"
-  - dialogue: "\uC640 \uACE0\uB9C8\uC6CC !\n\uB355\uBD84\uC5D0 \uC870\uC6A9\uD574\uC84C\uC5B4"
-  - dialogue: "\uADF8\uB7FC \uC798 \uAC00~"
-  - dialogue: "\uADF8\uB7FC \uC798 \uAC00~"
+  m_LocalEulerAnglesHint: {x: 0, y: 67.515, z: 0}
 --- !u!114 &9054753668943272769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14182,7 +14154,7 @@ GameObject:
   - component: {fileID: 9054753668943272829}
   - component: {fileID: 9054753668943272828}
   - component: {fileID: 9054753668943272769}
-  - component: {fileID: 9054753668943272768}
+  - component: {fileID: 9054753668943272832}
   m_Layer: 5
   m_Name: CanvasButton
   m_TagString: Untagged
@@ -14271,6 +14243,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &9054753668943272832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9054753668943272827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d82691199021444c8f9be53ff0769d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 464917765}
+  BBContainer: {fileID: 586296295}
+  text_Dialogue: {fileID: 6045679210268279311}
+  button: {fileID: 9054753669085211668}
+  dialogue:
+  - dialogue: "\uCCB4\uC721 \uD589\uC0AC\uAC00 \uC5F4\uB9AC\uAC70\uB098\n\uCD95\uC81C\uAC00
+      \uC5F4\uB9AC\uAE30\uB3C4 \uD558\uB294 \uACF3\uC774\uC9C0"
+  - dialogue: "\uADF8\uB7F0\uB370 \uCD95\uC81C\uB97C \uBC29\uD574\uD558\uB294\n\uD558\uC774\uBE44\uBE44\uB97C
+      \uC7A1\uC544\uC918 !"
+  - dialogue: "\uB545 \uC18D\uC5D0 \uC228\uC5B4\uC788\uB294 \uD558\uC774\uBE44\uBE44\uAC00\n\uB098\uC62C
+      \uB54C A \uBC84\uD2BC\uC73C\uB85C \uC7A1\uC544\uC918"
+  - dialogue: "\uC9C0\uAE08\uBD80\uD130 \uC2DC~\uC791\n10\uB9C8\uB9AC\uB9CC \uC7A1\uC544\uC918"
+  - dialogue: "\uC640 \uACE0\uB9C8\uC6CC !\n\uB355\uBD84\uC5D0 \uD558\uC774\uBE44\uBE44\uB97C
+      \uCC3E\uC558"
+  - dialogue: "\uADF8\uB7FC \uC798 \uAC00~"
+  - dialogue: "\uADF8\uB7FC \uC798 \uAC00~"
 --- !u!1 &9054753669085211666
 GameObject:
   m_ObjectHideFlags: 0
@@ -14354,7 +14354,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9054753668943272768}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MoleDialogue, Assembly-CSharp
         m_MethodName: NextDialogue
         m_Mode: 1
