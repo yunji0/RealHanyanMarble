@@ -64,12 +64,14 @@ public class MoleDialogue : MonoBehaviour
 
             try
             {
-                if ((GameManagerScript.Hib2b2Place.Find(x => (x == GameManagerScript.NextScene)) != null) || (GameManagerScript.GetHib2b2Place.Find(x => (x == GameManagerScript.NextScene)) == null))
+                if (!(GameManagerScript.Hib2b2Place.Find(x => (x == GameManagerScript.NextScene)) == null) || (GameManagerScript.GetHib2b2Place.Find(x => (x == GameManagerScript.NextScene)) == null))
                 {
                     GameManagerScript.GetHib2b2Place.Add(GameManagerScript.NextScene); //미니게임 종료 후 현재 씬에서 비비를 얻을 수 있나 검사 후 획득, 중복 획득 방지
                 }
+
                 if (GameManagerScript.GetHib2b2Place.Count > 2)
                 {
+
                     var GM = GameObject.FindGameObjectWithTag("GM");
                     Destroy(GM);
                     LoadingSceneControl.LoadScene("Menu");  //하이비비 3개가 모이면 게임 종료하여 메뉴로 복귀, 추후에 시간 남으면 종료만을 위한 씬 구성.
