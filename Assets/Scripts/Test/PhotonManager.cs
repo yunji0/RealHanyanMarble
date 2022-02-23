@@ -104,7 +104,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
         if (PV.IsMine)
         {
             bool up1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickUp)||Input.GetKey(KeyCode.W);
-            bool down1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickDown) || Input.GetKey(KeyCode.S); ;
+            bool down1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickDown) || Input.GetKey(KeyCode.S);
             bool left1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickLeft) || Input.GetKey(KeyCode.A);
             bool right1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickRight) || Input.GetKey(KeyCode.D); ;
 
