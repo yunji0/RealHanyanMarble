@@ -100,34 +100,47 @@ public class PhotonManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-
-        if (PV.IsMine)
+        try
         {
-            bool up1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickUp)||Input.GetKey(KeyCode.W);
-            bool down1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickDown) || Input.GetKey(KeyCode.S); ;
-            bool left1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickLeft) || Input.GetKey(KeyCode.A);
-            bool right1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickRight) || Input.GetKey(KeyCode.D); ;
+            if (PV.IsMine)
+            {
+                bool up1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickUp) || Input.GetKey(KeyCode.W);
+                bool down1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickDown) || Input.GetKey(KeyCode.S);
+                bool left1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickLeft) || Input.GetKey(KeyCode.A);
+                bool right1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickRight) || Input.GetKey(KeyCode.D); ;
 
-            if (up1) { V = 1; }
-            else if (down1) { V = -1; }
-            else { V = 0; }
+                if (up1) { V = 1; }
+                else if (down1) { V = -1; }
+                else { V = 0; }
 
-            if (left1) { H = -1; }
-            else if (right1) { H = 1; }
-            else { H = 0; }
-            Vector3 ddir = new Vector3(H, 0, V).normalized;
-            ddir = Camera.main.transform.TransformDirection(ddir);
-            ddir.y = -9.8f;
-            CCm.Move(ddir*Time.deltaTime*10);
+                if (left1) { H = -1; }
+                else if (right1) { H = 1; }
+                else { H = 0; }
+                Vector3 ddir = new Vector3(H, 0, V).normalized;
+                ddir = Camera.main.transform.TransformDirection(ddir);
+                ddir.y = -9.8f;
+                CCm.Move(ddir * Time.deltaTime * 10);
 
-            Vector3 vec5 = Camera.main.transform.eulerAngles;
-            hanyang.transform.eulerAngles=new Vector3(0, vec5.y,0);
+                Vector3 vec5 = Camera.main.transform.eulerAngles;
+                hanyang.transform.eulerAngles = new Vector3(0, vec5.y, 0);
 
-          //  ro1 = new Vector3(0, vec5.x, 0)*360 ;
-          //  hanyang.transform.eulerAngles = ro1;
-          //  me.transform.Rotate(vec5*10);
-            print(Camera.main.transform.forward);
+                //  ro1 = new Vector3(0, vec5.x, 0)*360 ;
+                //  hanyang.transform.eulerAngles = ro1;
+                //  me.transform.Rotate(vec5*10);
+                print(Camera.main.transform.forward);
+
+
+                if (OVRInput.GetDown(OVRInput.Button.One)||Input.GetMouseButton(0))
+                {
+                    CCm.Move(new Vector3(0,20) * Time.deltaTime * 10);
+                }
+            }
         }
+        catch (System.Exception)
+        {
+
+        }
+      
        
     }
 
