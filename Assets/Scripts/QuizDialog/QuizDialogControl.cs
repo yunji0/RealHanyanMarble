@@ -18,9 +18,10 @@ public class QuizDialogControl : MonoBehaviour
     [SerializeField] private Dialogue3[] dialogues3;
     private bool isDialogue = false;
 
-    public int cnt3 = 0;
+    private int cnt3 = 0;
     [SerializeField] private GameObject ButtonSet1;
     [SerializeField] private GameObject ButtonSet2;
+    [SerializeField] private GameObject ButtonSet3;
 
     //showDialogue trigger
 
@@ -33,18 +34,25 @@ public class QuizDialogControl : MonoBehaviour
     {
         _Sprite3.gameObject.SetActive(true);
         _Txt3.gameObject.SetActive(true);
+        ButtonSet1.SetActive(false);
+        ButtonSet3.SetActive(true);
         cnt3 = 0;
         isDialogue = true;
         NextDialogue();
     }
 
-    private void NextDialogue()
+    public void NextDialogue()
     {
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
-        ButtonSet1.SetActive(true);
+        if (cnt3 == 3)
+        {
+            ButtonSet1.SetActive(true);
+            ButtonSet3.SetActive(false);
+        }
         ButtonSet2.SetActive(false);
         cnt3++;
+        
     }
 
     void HideDialoge()
@@ -57,7 +65,7 @@ public class QuizDialogControl : MonoBehaviour
 
     public void StartQuiz()
     {
-        cnt3 = 1;
+        cnt3 = 4;
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
         ButtonSet1.SetActive(false);
@@ -68,7 +76,7 @@ public class QuizDialogControl : MonoBehaviour
     {
         ButtonSet1.SetActive(false);
         ButtonSet2.SetActive(false);
-        cnt3 = 2;
+        cnt3 = 5;
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
         StartCoroutine(WaitPLZ());
@@ -81,7 +89,7 @@ public class QuizDialogControl : MonoBehaviour
 
     public void FalseAn()
     {
-        cnt3 = 3;
+        cnt3 = 6;
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
     }
@@ -102,7 +110,7 @@ public class QuizDialogControl : MonoBehaviour
 
         try
         {
-            if ((GameManagerScript.Hib2b2Place.Find(x => (x == GameManagerScript.NextScene)) != null) || (GameManagerScript.GetHib2b2Place.Find(x => (x == GameManagerScript.NextScene)) == null))
+            if (!(GameManagerScript.Hib2b2Place.Find(x => (x == GameManagerScript.NextScene)) == null) && (GameManagerScript.GetHib2b2Place.Find(x => (x == GameManagerScript.NextScene)) == null))
             {
                 GameManagerScript.GetHib2b2Place.Add(GameManagerScript.NextScene); //미니게임 종료 후 현재 씬에서 비비를 얻을 수 있나 검사 후 획득, 중복 획득 방지
             }
