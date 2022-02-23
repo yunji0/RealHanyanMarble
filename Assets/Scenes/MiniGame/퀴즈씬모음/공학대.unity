@@ -313,6 +313,138 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.6199656, y: 0.8938309, z: 1.7472844}
   m_Center: {x: -0.0000026226044, y: 0.0000017881393, z: 0.8736423}
+--- !u!1 &99563442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 99563446}
+  - component: {fileID: 99563445}
+  - component: {fileID: 99563444}
+  - component: {fileID: 99563443}
+  m_Layer: 5
+  m_Name: ButtonNext
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &99563443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99563442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 99563444}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4130726609483979346}
+        m_TargetAssemblyTypeName: QuizDialogControl, Assembly-CSharp
+        m_MethodName: NextDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &99563444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99563442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: eed891ccfa9750a4098bdab16aa5d0fb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &99563445
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99563442}
+  m_CullTransparentMesh: 1
+--- !u!224 &99563446
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99563442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5201553572338206868}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 119.2, y: -24.5}
+  m_SizeDelta: {x: 100, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &156583403
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,12 +458,12 @@ GameObject:
   - component: {fileID: 156583406}
   - component: {fileID: 156583405}
   m_Layer: 5
-  m_Name: StartQuiz
+  m_Name: ButtonStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &156583404
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1508,7 +1640,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3387,7 +3519,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4130726609483979346}
         m_TargetAssemblyTypeName: QuizDialogControl, Assembly-CSharp
-        m_MethodName: TrueAn
+        m_MethodName: FalseAn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3614,7 +3746,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4130726609483979346}
         m_TargetAssemblyTypeName: QuizDialogControl, Assembly-CSharp
-        m_MethodName: FalseAn
+        m_MethodName: TrueAn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4643,7 +4775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: -15}
+  m_AnchoredPosition: {x: -42.1, y: -13.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &256040700334729930
@@ -8131,7 +8263,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Templete
+  m_Text: "\uB05D"
 --- !u!23 &3182784003098235565
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9454,24 +9586,29 @@ MonoBehaviour:
   _Sprite3: {fileID: 8267359378382445438}
   _Txt3: {fileID: 3112177047453285472}
   dialogues3:
-  - dialogue3: "\uC548\uB155 \uC5EC\uAE30\uB294 \uACF5\uD559\uB300\uC57C! \n\uD034\uC988
-      \uD55C\uBC88 \uD480\uC5B4\uBD10!"
+  - dialogue3: "\uC548\uB155~\n\uACF5\uD559\uB300\uC5D0 \uC628 \uAC78 \uD658\uC601\uD574
+      !"
     cg3: {fileID: 21300000, guid: f4b0bf2d5f7f2e642848e07c45906cb3, type: 3}
-  - dialogue3: "\uC124\uBA85"
+  - dialogue3: "\uAC74\uCD95, \uAC74\uC124, \uC804\uC790, \uC7AC\uB8CC\uD654\uD559\n\uAE30\uACC4,
+      \uC0DD\uBA85, \uB85C\uBD07, \uAD6D\uBC29\n\uB4F1 \uB9CE\uC740 \uBD84\uC57C\uAC00
+      \uC788\uC9C0"
     cg3: {fileID: 21300000, guid: f4b0bf2d5f7f2e642848e07c45906cb3, type: 3}
-  - dialogue3: "\uC124\uBA85"
+  - dialogue3: "\uCEA1\uC2A4\uD1A4 \uB514\uC790\uC778, PBL \uAD50\uC721 \uB4F1\n\uD2BC\uD2BC\uD55C
+      \uACF5\uD559\uC778\uC744 \uBC30\uCD9C\uD558\uAE30 \uC704\uD574\n\uC624\uB298\uB3C4
+      \uB178\uB825\uD558\uACE0 \uC788\uC9C0 !"
     cg3: {fileID: 21300000, guid: f4b0bf2d5f7f2e642848e07c45906cb3, type: 3}
-  - dialogue3: "\uD034\uC988 \uD478\uC2E4 ?"
+  - dialogue3: "\uADF8\uB7FC \uC5EC\uAE30\uC11C\n\uD034 ~ \uC988 !"
     cg3: {fileID: 21300000, guid: f4b0bf2d5f7f2e642848e07c45906cb3, type: 3}
-  - dialogue3: "\uD034\uC988"
+  - dialogue3: "1,2,3,4,5 \uACF5\uD559\uAD00\uC774 \uC788\uB294\uB370\n\uBAA8\uB450
+      \uBAA8\uC5EC \uC788\uC744 \uAE4C ?"
     cg3: {fileID: 21300000, guid: f4b0bf2d5f7f2e642848e07c45906cb3, type: 3}
-  - dialogue3: "\uC815\uB2F5\uC774\uC57C! \uC798\uAC00"
+  - dialogue3: "\uC815\uB2F5\uC774\uC57C!\n\uC798 \uAC00 ~"
     cg3: {fileID: 21300000, guid: f4b0bf2d5f7f2e642848e07c45906cb3, type: 3}
-  - dialogue3: "\uC624\uB2F5\uC774\uC57C! \uB2E4\uC2DC \uD480\uC5B4\uBD10"
+  - dialogue3: "\uD2C0\uB838\uC5B4 !\n\uB2E4\uC2DC \uD480\uC5B4\uBD10"
     cg3: {fileID: 21300000, guid: f4b0bf2d5f7f2e642848e07c45906cb3, type: 3}
   ButtonSet1: {fileID: 156583403}
   ButtonSet2: {fileID: 887606961}
-  ButtonSet3: {fileID: 0}
+  ButtonSet3: {fileID: 99563442}
 --- !u!33 &4132897101057942283
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9812,7 +9949,7 @@ Transform:
   m_GameObject: {fileID: 4232566376400682442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.7, z: 0}
-  m_LocalScale: {x: 12.83464, y: 13.00919, z: 0}
+  m_LocalScale: {x: 13.3, y: 14.4, z: 0}
   m_Children: []
   m_Father: {fileID: 5201553572338206868}
   m_RootOrder: 1
@@ -10279,6 +10416,7 @@ RectTransform:
   - {fileID: 248797492770010360}
   - {fileID: 887606962}
   - {fileID: 156583404}
+  - {fileID: 99563446}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
