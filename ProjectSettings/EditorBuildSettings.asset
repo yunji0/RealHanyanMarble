@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 9c0c656a4e2fd2240b1bb37b8092d0fe
   - enabled: 0
@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniGame/TestScene/FindScene.unity
     guid: 0418a2f71c71dbe4b8c7eacde051c4f9
   - enabled: 0
-    path: "Assets/Scenes/MiniGame/\uD034\uC988\uC52C\uBAA8\uC74C/\uACBD\uC0C1\uB300.unity"
-    guid: 40d3f37968d8e2f4383331742ea41ef0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/MiniGame/TestScene/FindSceneTest.unity
     guid: 20e9caf90921cf049932d614998de6e8
@@ -47,9 +47,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/LoadingScene.unity
     guid: 3b076281f27fa6d408a39dd4b5ed1e2a
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/\uC5D0\uB9AC\uCE74.unity"
     guid: 5c325af2b4753fc438b83e5b6c164b87
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 664e3382e49a14a489b269ed07c63e00
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: dc8ace271cf3f234ba95667b5867630e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: aa6d275fe99a8b947b5bd390c39a0fda, type: 2}
