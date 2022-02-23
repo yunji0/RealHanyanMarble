@@ -98,6 +98,22 @@ public class PhotonManager : MonoBehaviourPunCallbacks
     }
 
     // Update is called once per frame
+    float jumptime=0;
+    void Jump() {
+
+        for (; ; )
+        {
+            jumptime += Time.deltaTime;
+            if (jumptime < 4.0f)
+            {
+                CCm.Move(new Vector3(0, 0.5f, 0) * Time.deltaTime);
+            }
+            else {
+                break;
+            }
+        }
+
+    }
     void Update()
     {
         try
@@ -118,7 +134,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                 else { H = 0; }
                 Vector3 ddir = new Vector3(H, 0, V).normalized;
                 ddir = Camera.main.transform.TransformDirection(ddir);
-                ddir.y = -9.8f;
+                ddir.y = -1.2f;
                 CCm.Move(ddir * Time.deltaTime * 10);
 
                 Vector3 vec5 = Camera.main.transform.eulerAngles;
@@ -130,9 +146,11 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                 print(Camera.main.transform.forward);
 
 
-                if (OVRInput.GetDown(OVRInput.Button.One)||Input.GetMouseButton(0))
+                if (OVRInput.GetDown(OVRInput.Button.One)||Input.GetMouseButtonDown(0))
                 {
-                    CCm.Move(new Vector3(0,20) * Time.deltaTime * 10);
+                    jumptime = 0;
+                    Jump();
+                    
                 }
             }
         }
