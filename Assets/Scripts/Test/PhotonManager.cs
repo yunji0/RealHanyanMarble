@@ -128,6 +128,12 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                 //  hanyang.transform.eulerAngles = ro1;
                 //  me.transform.Rotate(vec5*10);
                 print(Camera.main.transform.forward);
+
+
+                if (OVRInput.GetDown(OVRInput.Button.One)||Input.GetMouseButton(0))
+                {
+                    CCm.Move(new Vector3(0,20) * Time.deltaTime * 10);
+                }
             }
         }
         catch (System.Exception)
