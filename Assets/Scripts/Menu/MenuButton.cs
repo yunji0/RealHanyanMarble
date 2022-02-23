@@ -13,7 +13,7 @@ public class MenuButton : MonoBehaviour
     public void HanyangUniversityScene()
     {
 
-        LoadingSceneControl.LoadScene("HanyangMarble");
+        LoadingSceneControl.LoadScene("¿¡¸®Ä«");
     }
 
     public void End()
