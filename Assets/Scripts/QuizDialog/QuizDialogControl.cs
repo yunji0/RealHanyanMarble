@@ -19,9 +19,9 @@ public class QuizDialogControl : MonoBehaviour
     private bool isDialogue = false;
 
     private int cnt3 = 0;
-    [SerializeField] private GameObject ButtonSet1;
-    [SerializeField] private GameObject ButtonSet2;
-    [SerializeField] private GameObject ButtonSet3;
+    [SerializeField] private GameObject ButtonStart;
+    [SerializeField] private GameObject ButtonOX;
+    [SerializeField] private GameObject ButtonNext;
 
     //showDialogue trigger
 
@@ -34,8 +34,8 @@ public class QuizDialogControl : MonoBehaviour
     {
         _Sprite3.gameObject.SetActive(true);
         _Txt3.gameObject.SetActive(true);
-        ButtonSet1.SetActive(false);
-        ButtonSet3.SetActive(true);
+        ButtonStart.SetActive(false);
+        ButtonNext.SetActive(true);
         cnt3 = 0;
         isDialogue = true;
         NextDialogue();
@@ -47,10 +47,10 @@ public class QuizDialogControl : MonoBehaviour
         _Sprite3.sprite = dialogues3[cnt3].cg3;
         if (cnt3 == 3)
         {
-            ButtonSet1.SetActive(true);
-            ButtonSet3.SetActive(false);
+            ButtonStart.SetActive(true);
+            ButtonNext.SetActive(false);
         }
-        ButtonSet2.SetActive(false);
+        ButtonOX.SetActive(false);
         cnt3++;
         
     }
@@ -68,14 +68,14 @@ public class QuizDialogControl : MonoBehaviour
         cnt3 = 4;
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
-        ButtonSet1.SetActive(false);
-        ButtonSet2.SetActive(true);
+        ButtonStart.SetActive(false);
+        ButtonOX.SetActive(true);
     }
 
     public void TrueAn()
     {
-        ButtonSet1.SetActive(false);
-        ButtonSet2.SetActive(false);
+        ButtonStart.SetActive(false);
+        ButtonOX.SetActive(false);
         cnt3 = 5;
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
