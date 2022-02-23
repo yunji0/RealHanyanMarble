@@ -3,17 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-
-
 [System.Serializable]
 public class Dialogue3
 {
     [TextArea]
     public string dialogue3;
     public Sprite cg3;
-
 }
+
 public class QuizDialogControl : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _Sprite3;
@@ -25,22 +22,20 @@ public class QuizDialogControl : MonoBehaviour
     [SerializeField] private GameObject ButtonSet1;
     [SerializeField] private GameObject ButtonSet2;
 
-
     //showDialogue trigger
 
     private void Start()
     {
         ShowDialogue();
     }
+
     public void ShowDialogue()
     {
-
         _Sprite3.gameObject.SetActive(true);
         _Txt3.gameObject.SetActive(true);
         cnt3 = 0;
         isDialogue = true;
         NextDialogue();
-
     }
 
     private void NextDialogue()
@@ -50,7 +45,6 @@ public class QuizDialogControl : MonoBehaviour
         ButtonSet1.SetActive(true);
         ButtonSet2.SetActive(false);
         cnt3++;
-
     }
 
     void HideDialoge()
@@ -68,8 +62,8 @@ public class QuizDialogControl : MonoBehaviour
         _Sprite3.sprite = dialogues3[cnt3].cg3;
         ButtonSet1.SetActive(false);
         ButtonSet2.SetActive(true);
-
     }
+
     public void TrueAn()
     {
         ButtonSet1.SetActive(false);
@@ -78,8 +72,8 @@ public class QuizDialogControl : MonoBehaviour
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
         StartCoroutine(WaitPLZ());
-
     }
+
     IEnumerator WaitPLZ() {
         yield return new WaitForSeconds(4);
         Comeback();
@@ -90,8 +84,8 @@ public class QuizDialogControl : MonoBehaviour
         cnt3 = 3;
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
-
     }
+
     public void Comeback()
     {
         HideDialoge();
@@ -130,9 +124,5 @@ public class QuizDialogControl : MonoBehaviour
         {
 
         }
-
     }
-
 }
-   
-
