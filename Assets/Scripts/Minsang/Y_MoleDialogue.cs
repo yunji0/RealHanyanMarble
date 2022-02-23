@@ -73,7 +73,7 @@ public class Y_MoleDialogue : MonoBehaviour
 
                     var GM = GameObject.FindGameObjectWithTag("GM");
                     Destroy(GM);
-                    LoadingSceneControl.LoadScene("Menu");  //하이비비 3개가 모이면 게임 종료하여 메뉴로 복귀, 추후에 시간 남으면 종료만을 위한 씬 구성.
+                    LoadingSceneControl.LoadScene("EndingScene");  //하이비비 3개가 모이면 게임 종료하여 메뉴로 복귀, 추후에 시간 남으면 종료만을 위한 씬 구성.
                 }
                 else
                 {
