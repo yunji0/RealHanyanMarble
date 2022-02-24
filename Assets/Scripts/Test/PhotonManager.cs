@@ -152,6 +152,11 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                     Jump();
                     
                 }
+
+                if (OVRInput.GetDown(OVRInput.Button.Two))
+                {
+                    LoadingSceneControl.LoadScene("Menu");
+                }
             }
         }
         catch (System.Exception)

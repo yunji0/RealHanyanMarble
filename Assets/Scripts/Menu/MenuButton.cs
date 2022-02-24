@@ -12,8 +12,9 @@ public class MenuButton : MonoBehaviour
     }
     public void HanyangUniversityScene()
     {
-
-        LoadingSceneControl.LoadScene("HanyangMarble");
+        var GM = GameObject.FindGameObjectWithTag("GM");
+        Destroy(GM);
+        LoadingSceneControl.LoadScene("¿¡¸®Ä«");
     }
 
     public void End()
