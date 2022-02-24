@@ -7,6 +7,8 @@ public class BiBiCollision : MonoBehaviour
 
     public GameObject EndCav;
     public GameObject BiBi;
+    public GameObject DistanceR;
+    public GameObject DistanceL;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,8 @@ public class BiBiCollision : MonoBehaviour
         {
             EndCav.SetActive(true);
             BiBi.SetActive(false);
+            DistanceL.SetActive(false);
+            DistanceR.SetActive(false);
         }
     }
 

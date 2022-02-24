@@ -24,6 +24,9 @@ public class StartCavas : MonoBehaviour
     [SerializeField] private GameObject StartButton;
 
     public GameObject StartCav;
+    public GameObject DistanceR;
+    public GameObject DistanceL;
+
 
     public void ShowDialouge()
     {
@@ -45,8 +48,15 @@ public class StartCavas : MonoBehaviour
     public void Click()
     {
         StartCav.SetActive(false);
+        DistanceL.SetActive(true);
+        DistanceR.SetActive(true);
     }
 
+    private void Awake()
+    {
+        DistanceL.SetActive(false);
+        DistanceR.SetActive(false);
+    }
 
     private void Start()
     {
