@@ -21,7 +21,7 @@ public class BiBiCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "GetPostion")
+        if (other.gameObject.name == "GetPostion" && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
         {
             EndCav.SetActive(true);
             BiBi.SetActive(false);
