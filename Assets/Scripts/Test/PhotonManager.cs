@@ -87,6 +87,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
             me2 = me.transform.GetChild(1).gameObject;
             me2.SetActive(true);
             hanyang = me.transform.GetChild(2).gameObject;
+            hanyang.GetComponent<MeshRenderer>().enabled = false;
        //     ro1 = hanyang.transform.eulerAngles;
         }
     }
@@ -124,7 +125,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                 bool down1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickDown) || Input.GetKey(KeyCode.S);
                 bool left1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickLeft) || Input.GetKey(KeyCode.A);
                 bool right1 = OVRInput.Get(OVRInput.Button.PrimaryThumbstickRight) || Input.GetKey(KeyCode.D); ;
-
+                
                 if (up1) { V = 1; }
                 else if (down1) { V = -1; }
                 else { V = 0; }
@@ -134,7 +135,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                 else { H = 0; }
                 Vector3 ddir = new Vector3(H, 0, V).normalized;
                 ddir = Camera.main.transform.TransformDirection(ddir);
-                ddir.y = -1.2f;
+                ddir.y = -0.8f;
                 CCm.Move(ddir * Time.deltaTime * 5);
 
                 Vector3 vec5 = Camera.main.transform.eulerAngles;
@@ -143,7 +144,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                 //  ro1 = new Vector3(0, vec5.x, 0)*360 ;
                 //  hanyang.transform.eulerAngles = ro1;
                 //  me.transform.Rotate(vec5*10);
-                print(Camera.main.transform.forward);
+              //  print(Camera.main.transform.forward);
 
 
                 if (OVRInput.GetDown(OVRInput.Button.One)||Input.GetMouseButtonDown(0))
@@ -157,6 +158,8 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                 {
                     LoadingSceneControl.LoadScene("Menu");
                 }
+
+
             }
         }
         catch (System.Exception)
