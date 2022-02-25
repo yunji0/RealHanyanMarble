@@ -23,6 +23,9 @@ public class QuizDialogControl : MonoBehaviour
     [SerializeField] private GameObject ButtonOX;
     [SerializeField] private GameObject ButtonNext;
 
+    [SerializeField] private AudioSource SoundCorrect;
+    [SerializeField] private AudioSource SoundWrong;
+
     //showDialogue trigger
 
     private void Start()
@@ -79,6 +82,7 @@ public class QuizDialogControl : MonoBehaviour
         cnt3 = 5;
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
+        SoundCorrect.Play();
         StartCoroutine(WaitPLZ());
     }
 
@@ -92,6 +96,14 @@ public class QuizDialogControl : MonoBehaviour
         cnt3 = 6;
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
+        SoundWrong.Play();
+        StartCoroutine(ReQuiz());
+    }
+
+    IEnumerator ReQuiz()
+    {
+        yield return new WaitForSeconds(2);
+        StartQuiz();
     }
 
     public void Comeback()
