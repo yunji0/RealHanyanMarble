@@ -18,7 +18,7 @@ public class Hib2b2isHere : MonoBehaviour
     {
         try
         {
-            str1 = $"{GameManagerScript.Hib2b2Place[0]}, {GameManagerScript.Hib2b2Place[1]}, {GameManagerScript.Hib2b2Place[2]}¿¡ ¼û¾îÀÖ´Ù!";
+            str1 = $"{GameManagerScript.Hib2b2Place[0]}, {GameManagerScript.Hib2b2Place[1]}, {GameManagerScript.Hib2b2Place[2]}¿¡ ¼û¾îÀÖÁö·Õ!";
             _text.text = str1;
         }
         catch (System.Exception)
