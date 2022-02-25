@@ -7,7 +7,7 @@ public class GameManagerScript : MonoBehaviour
 {
     public static Vector3 PrePlayerPosition;
   
-    private string[] InteractionPlace = {"경상대","언정대","국문대","복지관","학생회관","공학대","과기대","셔틀콕","소융대","약학대","창보","학정","호공","본관","체대","음대","디대","대운동장","기숙사","컨퍼런스홀" }; //cngn
+    private string[] InteractionPlace = {"경상대","언정대","국문대","복지관","학생회관","공학대","과기대","셔틀콕","소융대","약학대","창보","학정","호공","본관","예체능대","디대","대운동장","기숙사","컨퍼런스홀" }; //cngn
     public static List<string> Hib2b2Place = new List<string>();
     public static List<string> GetHib2b2Place = new List<string>();
    
