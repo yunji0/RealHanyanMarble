@@ -371,7 +371,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 47f45ef7b5767674393cc401fc325705, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -500,7 +500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &159183938
 GameObject:
@@ -1146,7 +1146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &464917765
 MonoBehaviour:
@@ -1210,6 +1210,7 @@ Transform:
   - {fileID: 1375307862}
   - {fileID: 543450652105688075}
   - {fileID: 1399555804}
+  - {fileID: 5284129339557889955}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1256,7 +1257,7 @@ Transform:
   - {fileID: 1912636388}
   - {fileID: 247833851}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &606445384
 GameObject:
@@ -3446,7 +3447,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1819649950
 AudioSource:
@@ -11561,7 +11562,7 @@ Transform:
   - {fileID: 2552733753989209182}
   - {fileID: 4897607898194642}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &2552733753989209172
 Transform:
@@ -15432,8 +15433,8 @@ Transform:
   - {fileID: 1156504584}
   - {fileID: 908669439}
   - {fileID: 267002839}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 580340499}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5284129339557889956
 GameObject:
@@ -18880,7 +18881,7 @@ Transform:
   - {fileID: 9054753668943272831}
   - {fileID: 3529024230168524539}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 30.751, z: 0}
 --- !u!114 &9054753668943272769
 MonoBehaviour:
