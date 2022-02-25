@@ -1933,6 +1933,7 @@ GameObject:
   - component: {fileID: 165466556}
   - component: {fileID: 165466558}
   - component: {fileID: 165466557}
+  - component: {fileID: 165466559}
   m_Layer: 0
   m_Name: Fence_1 (1)
   m_TagString: Untagged
@@ -1948,8 +1949,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165466555}
   m_LocalRotation: {x: -0.49561766, y: 0.5043443, z: 0.49561766, w: 0.5043443}
-  m_LocalPosition: {x: 95.06, y: 39.49, z: -3.16}
-  m_LocalScale: {x: 4.2, y: 1, z: 1}
+  m_LocalPosition: {x: 95.06, y: 39.49, z: -2.6}
+  m_LocalScale: {x: 4.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1232922006}
   m_RootOrder: 7
@@ -2003,6 +2004,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165466555}
   m_Mesh: {fileID: 4301718, guid: 06e057c04ab7347a8a1883f67463f226, type: 3}
+--- !u!65 &165466559
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165466555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.3431635, y: 0.4291552, z: 1.0490984}
+  m_Center: {x: 0.0000021308663, y: 0.0000037990644, z: 0.5245471}
 --- !u!1 &169300419
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,6 +4310,7 @@ GameObject:
   - component: {fileID: 378412173}
   - component: {fileID: 378412175}
   - component: {fileID: 378412174}
+  - component: {fileID: 378412176}
   m_Layer: 0
   m_Name: Fence_1 (2)
   m_TagString: Untagged
@@ -4366,6 +4381,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378412172}
   m_Mesh: {fileID: 4301718, guid: 06e057c04ab7347a8a1883f67463f226, type: 3}
+--- !u!65 &378412176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378412172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.343163, y: 0.4291551, z: 1.0490983}
+  m_Center: {x: 0.0000021457672, y: -0.0000019073486, z: 0.52455044}
 --- !u!1 &380616535
 GameObject:
   m_ObjectHideFlags: 0
@@ -6546,6 +6574,101 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500333817}
   m_Mesh: {fileID: 4301662, guid: 06e057c04ab7347a8a1883f67463f226, type: 3}
+--- !u!1 &507757642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 507757643}
+  - component: {fileID: 507757646}
+  - component: {fileID: 507757645}
+  - component: {fileID: 507757644}
+  m_Layer: 0
+  m_Name: Rail_stand_grass (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &507757643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507757642}
+  m_LocalRotation: {x: -0.49991274, y: 0.50008726, z: 0.49991274, w: 0.50008726}
+  m_LocalPosition: {x: 114.44, y: 38.91, z: 13.64}
+  m_LocalScale: {x: 1.26, y: 2.2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1232922006}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: -89.98, y: 90, z: 0}
+--- !u!65 &507757644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507757642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.000004, y: 17.999998, z: 0.5000012}
+  m_Center: {x: -0.0000021457672, y: 0.00000095028736, z: 0.25000104}
+--- !u!23 &507757645
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507757642}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: af02ee09b483647a9b781dad2932ac3d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &507757646
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507757642}
+  m_Mesh: {fileID: 4300050, guid: 4e658f52b1fe04761b615de952e83625, type: 3}
 --- !u!1 &510884410
 GameObject:
   m_ObjectHideFlags: 0
@@ -6897,6 +7020,7 @@ GameObject:
   - component: {fileID: 528137628}
   - component: {fileID: 528137630}
   - component: {fileID: 528137629}
+  - component: {fileID: 528137631}
   m_Layer: 0
   m_Name: Rail_stand_grass (2)
   m_TagString: Untagged
@@ -6912,8 +7036,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528137627}
   m_LocalRotation: {x: -0.49991274, y: 0.50008726, z: 0.49991274, w: 0.50008726}
-  m_LocalPosition: {x: 114.44, y: 38.91, z: 13.64}
-  m_LocalScale: {x: 1.26, y: 2.2, z: 1}
+  m_LocalPosition: {x: 99.27, y: 38.9, z: -3.42}
+  m_LocalScale: {x: 4.4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1232922006}
   m_RootOrder: 16
@@ -6967,6 +7091,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528137627}
   m_Mesh: {fileID: 4300050, guid: 4e658f52b1fe04761b615de952e83625, type: 3}
+--- !u!65 &528137631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528137627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.000004, y: 17.999998, z: 0.5000012}
+  m_Center: {x: -0.0000021457672, y: 0.00000095028736, z: 0.25000104}
 --- !u!1 &534151939
 GameObject:
   m_ObjectHideFlags: 0
@@ -15982,6 +16119,7 @@ GameObject:
   - component: {fileID: 1111981440}
   - component: {fileID: 1111981442}
   - component: {fileID: 1111981441}
+  - component: {fileID: 1111981443}
   m_Layer: 0
   m_Name: Rail_stand_grass (1)
   m_TagString: Untagged
@@ -15997,7 +16135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111981439}
   m_LocalRotation: {x: -0.49991274, y: 0.50008726, z: 0.49991274, w: 0.50008726}
-  m_LocalPosition: {x: 114.44, y: 39.05, z: -17}
+  m_LocalPosition: {x: 114.44, y: 39.05, z: -16.36}
   m_LocalScale: {x: 1.6, y: 2.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1232922006}
@@ -16052,6 +16190,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111981439}
   m_Mesh: {fileID: 4300050, guid: 4e658f52b1fe04761b615de952e83625, type: 3}
+--- !u!65 &1111981443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111981439}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.000004, y: 17.999998, z: 0.5000012}
+  m_Center: {x: -0.0000021457672, y: 0.00000095028736, z: 0.25000104}
 --- !u!1 &1120084568
 GameObject:
   m_ObjectHideFlags: 0
@@ -17682,6 +17833,7 @@ Transform:
   - {fileID: 1446667109}
   - {fileID: 370718360}
   - {fileID: 500333818}
+  - {fileID: 507757643}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18813,6 +18965,8 @@ GameObject:
   - component: {fileID: 1350200067}
   - component: {fileID: 1350200069}
   - component: {fileID: 1350200068}
+  - component: {fileID: 1350200071}
+  - component: {fileID: 1350200070}
   m_Layer: 0
   m_Name: Road_without_marking_square_3 (1)
   m_TagString: Untagged
@@ -18883,6 +19037,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350200066}
   m_Mesh: {fileID: 4300136, guid: 4e658f52b1fe04761b615de952e83625, type: 3}
+--- !u!65 &1350200070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350200066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.000001, y: 2.3805368, z: 0.89999986}
+  m_Center: {x: 0.00000047683716, y: 3.3097537, z: 0.45000622}
+--- !u!65 &1350200071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350200066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.000001, y: 9, z: 0.4}
+  m_Center: {x: 0.00000047683716, y: 0.0000026226041, z: 0.4500003}
 --- !u!1 &1353197887
 GameObject:
   m_ObjectHideFlags: 0
@@ -30186,6 +30366,8 @@ GameObject:
   - component: {fileID: 2097510746}
   - component: {fileID: 2097510748}
   - component: {fileID: 2097510747}
+  - component: {fileID: 2097510750}
+  - component: {fileID: 2097510749}
   m_Layer: 0
   m_Name: Road_without_marking_square_4 (1)
   m_TagString: Untagged
@@ -30256,6 +30438,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097510745}
   m_Mesh: {fileID: 4300138, guid: 4e658f52b1fe04761b615de952e83625, type: 3}
+--- !u!65 &2097510749
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097510745}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9, y: 2.753051, z: 0.89999986}
+  m_Center: {x: 0.0000009536743, y: -3.1235116, z: 0.45000717}
+--- !u!65 &2097510750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097510745}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9, y: 9, z: 0.4}
+  m_Center: {x: 0.0000011920929, y: -0.0000066757193, z: 0.4499992}
 --- !u!1 &2101272296
 GameObject:
   m_ObjectHideFlags: 0
@@ -31530,6 +31738,7 @@ GameObject:
   - component: {fileID: 624300584643051363}
   - component: {fileID: 624300584641953059}
   - component: {fileID: 624300584639685476}
+  - component: {fileID: 624300584639685477}
   m_Layer: 0
   m_Name: Crossing_horizontal_2
   m_TagString: Untagged
@@ -31548,8 +31757,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9, y: 8.999999, z: 0.89999986}
+  m_Size: {x: 9, y: 8.999999, z: 0.4}
   m_Center: {x: -0.000004053116, y: 0, z: 0.45000097}
+--- !u!65 &624300584639685477
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624300584639685475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6973915, y: 9.000003, z: 0.90000236}
+  m_Center: {x: -3.421331, y: -0.0000014308436, z: 0.45}
 --- !u!23 &624300584641953059
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34069,6 +34291,8 @@ GameObject:
   - component: {fileID: 4132644986170462185}
   - component: {fileID: 4132644986167037833}
   - component: {fileID: 4132644986168036809}
+  - component: {fileID: 4132644986170303371}
+  - component: {fileID: 4132644986170303370}
   m_Layer: 0
   m_Name: Road_without_marking_square_3
   m_TagString: Untagged
@@ -34076,6 +34300,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &4132644986170303370
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132644986170303369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.000001, y: 2.4234369, z: 0.89999986}
+  m_Center: {x: 0.00000047683716, y: 3.2882974, z: 0.4500046}
+--- !u!65 &4132644986170303371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132644986170303369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.000001, y: 9, z: 0.4}
+  m_Center: {x: 0.00000047683716, y: 0.0000026226041, z: 0.4500003}
 --- !u!4 &4132644986170462185
 Transform:
   m_ObjectHideFlags: 0
@@ -34606,6 +34856,7 @@ GameObject:
   - component: {fileID: 5604309217403338035}
   - component: {fileID: 5604309217404305267}
   - component: {fileID: 5604309217406492980}
+  - component: {fileID: 5604309217406492981}
   m_Layer: 0
   m_Name: Crossing_horizontal_1
   m_TagString: Untagged
@@ -34624,8 +34875,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.000001, y: 8.999999, z: 0.89999986}
-  m_Center: {x: 0.0000042915344, y: 0, z: 0.45000097}
+  m_Size: {x: 8.979265, y: 8.999999, z: 0.4}
+  m_Center: {x: 0.0103755, y: 2.476786e-12, z: 0.450001}
+--- !u!65 &5604309217406492981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5604309217406492979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8043575, y: 9.000003, z: 0.90000236}
+  m_Center: {x: 3.0978475, y: -0.000010966383, z: 0.44999784}
 --- !u!33 &5631946370698360321
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -35274,6 +35538,7 @@ GameObject:
   - component: {fileID: 6293051135956712944}
   - component: {fileID: 6293051135958006288}
   - component: {fileID: 6293051135959007184}
+  - component: {fileID: 6293051135957069329}
   m_Layer: 0
   m_Name: Fence_1
   m_TagString: Untagged
@@ -35281,6 +35546,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &6293051135957069329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6293051135957069328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.343163, y: 0.4291551, z: 1.0490983}
+  m_Center: {x: 0.0000021457672, y: -0.0000019073486, z: 0.5245478}
 --- !u!33 &6293051135958006288
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -35743,6 +36021,8 @@ GameObject:
   - component: {fileID: 7226541817435815774}
   - component: {fileID: 7226541817438683006}
   - component: {fileID: 7226541817437715774}
+  - component: {fileID: 7226541817435771776}
+  - component: {fileID: 7226541817435771775}
   m_Layer: 0
   m_Name: Road_without_marking_square_4
   m_TagString: Untagged
@@ -35750,6 +36030,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7226541817435771775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7226541817435771774}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9, y: 2.7860177, z: 0.89999986}
+  m_Center: {x: 0.0000009536743, y: -3.1070392, z: 0.45000765}
+--- !u!65 &7226541817435771776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7226541817435771774}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9, y: 9, z: 0.4}
+  m_Center: {x: 0.0000011920929, y: -0.0000066757193, z: 0.4499992}
 --- !u!4 &7226541817435815774
 Transform:
   m_ObjectHideFlags: 0
