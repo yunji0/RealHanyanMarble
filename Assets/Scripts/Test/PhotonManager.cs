@@ -87,6 +87,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
             me2 = me.transform.GetChild(1).gameObject;
             me2.SetActive(true);
             hanyang = me.transform.GetChild(2).gameObject;
+            hanyang.GetComponent<MeshRenderer>().enabled = false;
        //     ro1 = hanyang.transform.eulerAngles;
         }
     }
