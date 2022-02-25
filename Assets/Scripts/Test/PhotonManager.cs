@@ -135,7 +135,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                 Vector3 ddir = new Vector3(H, 0, V).normalized;
                 ddir = Camera.main.transform.TransformDirection(ddir);
                 ddir.y = -1.2f;
-                CCm.Move(ddir * Time.deltaTime * 10);
+                CCm.Move(ddir * Time.deltaTime * 5);
 
                 Vector3 vec5 = Camera.main.transform.eulerAngles;
                 hanyang.transform.eulerAngles = new Vector3(0, vec5.y, 0);
