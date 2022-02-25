@@ -96,6 +96,7 @@ public class QuizDialogControl : MonoBehaviour
         cnt3 = 6;
         _Txt3.text = dialogues3[cnt3].dialogue3;
         _Sprite3.sprite = dialogues3[cnt3].cg3;
+        ButtonOX.SetActive(false);
         SoundWrong.Play();
         StartCoroutine(ReQuiz());
     }
