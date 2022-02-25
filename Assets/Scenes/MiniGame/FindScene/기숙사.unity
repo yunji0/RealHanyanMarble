@@ -13023,7 +13023,11 @@ MonoBehaviour:
   sprite_StandginCG: {fileID: 0}
   sprite_DialogueBox: {fileID: 0}
   text_Dialogue: {fileID: 0}
-  dialouge: []
+  dialouge:
+  - dialogue: 
+    cg: {fileID: 0}
+  - dialogue: 
+    cg: {fileID: 0}
   StartButton: {fileID: 0}
   StartCav: {fileID: 544747374}
   DistanceR: {fileID: 1241039462}
@@ -13661,7 +13665,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 47f45ef7b5767674393cc401fc325705, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -36194,7 +36198,7 @@ GameObject:
   - component: {fileID: 1409762107}
   m_Layer: 0
   m_Name: OVRPlayerController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
