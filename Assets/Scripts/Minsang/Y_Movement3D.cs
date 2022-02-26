@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Y_Movement3D : MonoBehaviour
 {
-    private float moveSpeed = 1f;
+    [SerializeField]
+    private float moveSpeed = 0;
     private Vector3 moveDirection = Vector3.zero;
 
     private void Update()
