@@ -12483,10 +12483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c4986f1e0dce14cb778dd123939e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite_StandginCG: {fileID: 0}
-  sprite_DialogueBox: {fileID: 0}
   text_Dialogue: {fileID: 0}
-  dialouge: []
+  dialogue: []
+  button: {fileID: 0}
   StartButton: {fileID: 0}
   StartCav: {fileID: 999958893}
   DistanceR: {fileID: 1007000750}
@@ -19572,7 +19571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uAC8C\uC784\uC73C\uB85C \uB3CC\uC544\uAC00\uAE30 "
+  m_Text: 
 --- !u!222 &1511260347
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20355,8 +20354,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC548\uB155 \uC154\uD2C0\uCF55\uC5D0 \uC628\uAC78 \uD658\uC601\uD569\uB2C8\uB2E4\n\uC5EC\uAE30\uC11C
-    \uC624\uB978\uCABD\uC5D0 \uBCF4\uC774\uB294 \uD558\uC774\uBE44\uBE44\uB97C \uCC3E\uC544\uBCF4\uC138\uC694."
+  m_Text: "\uC548\uB155 \uCEE8\uD37C\uB7F0\uC2A4\uD640\uC5D0 \uC628\uAC78 \uD658\uC601\uD574!\n\uC5EC\uAE30\uC11C
+    \uC624\uB978\uCABD\uC5D0 \uBCF4\uC774\uB294 \uD558\uC774\uBE44\uBE44\uB97C \uCC3E\uC544\uBD10."
 --- !u!222 &1555751672
 CanvasRenderer:
   m_ObjectHideFlags: 0

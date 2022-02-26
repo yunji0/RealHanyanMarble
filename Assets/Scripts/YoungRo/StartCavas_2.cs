@@ -3,28 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dialouge
+public class Dialouge_st
 {
-    [TextArea]
-    public string dialogue;
+    [TextArea] public string dialogue;
 }
 
-public class StartCavas : MonoBehaviour
+public class StartCavas_2 : MonoBehaviour
 {
 
     [SerializeField] private Text text_Dialogue;
+    [SerializeField] private Button button;
 
     private bool isDialogue = false;
     private int count = 0;
 
-    [SerializeField] private Dialogue[] dialogue;
-    [SerializeField] private Button button;
+    [SerializeField] private Dialouge_st[] dialogue;
+
+
     [SerializeField] private GameObject StartButton;
 
     public GameObject StartCav;
     public GameObject DistanceR;
     public GameObject DistanceL;
-
 
     public void ShowDialouge()
     {
@@ -49,13 +49,6 @@ public class StartCavas : MonoBehaviour
         }
     }
 
- //    private void NextDialouge()
- //   {
- //       text_Dialogue.text = dialouge[count].dialogue;
- //       sprite_StandginCG.sprite = dialouge[count].cg;
- //       count++;
- //   }
-
     public void Click()
     {
         StartCav.SetActive(false);
@@ -68,10 +61,11 @@ public class StartCavas : MonoBehaviour
         DistanceL.SetActive(false);
         DistanceR.SetActive(false);
     }
-
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         ShowDialouge();
     }
+
 
 }
