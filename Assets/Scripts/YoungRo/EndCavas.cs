@@ -19,15 +19,7 @@ public class EndCavas : MonoBehaviour
     
     public void Click_End()
     {
-        /*try
-        {
-            GameManagerScript.IsBack = true;
-            LoadingSceneControl.LoadScene("HanyangMarble");
-        }
-        catch (System.Exception)
-        {
 
-        }*/
         try
         {
             if (!(GameManagerScript.Hib2b2Place.Find(x => (x == GameManagerScript.NextScene)) == null) && (GameManagerScript.GetHib2b2Place.Find(x => (x == GameManagerScript.NextScene)) == null))
