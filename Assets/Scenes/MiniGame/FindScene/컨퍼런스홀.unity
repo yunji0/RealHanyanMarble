@@ -12483,21 +12483,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c4986f1e0dce14cb778dd123939e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite_DialogueBox: {fileID: 0}
-  text_Dialogue: {fileID: 0}
-  dialouge:
+  _text: {fileID: 1555751671}
+  dialogueY:
   - dialogue: 1
-    cg: {fileID: 0}
   - dialogue: 2
-    cg: {fileID: 0}
   - dialogue: 3
-    cg: {fileID: 0}
   - dialogue: 4
-    cg: {fileID: 0}
-  StartButton: {fileID: 0}
-  StartCav: {fileID: 999958893}
-  DistanceR: {fileID: 1007000750}
-  DistanceL: {fileID: 1026559959}
 --- !u!114 &999958895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12569,7 +12560,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999958893}
   m_LocalRotation: {x: 0, y: 0.70710737, z: -0, w: -0.7071063}
-  m_LocalPosition: {x: 0, y: 0, z: 0.984}
+  m_LocalPosition: {x: 0, y: 0, z: 0.98}
   m_LocalScale: {x: 0.02, y: 0.02, z: 1}
   m_Children:
   - {fileID: 1474731280}
@@ -12582,7 +12573,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 990, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.49, y: 2.25}
+  m_AnchoredPosition: {x: -9.65, y: 2.25}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1001179193
@@ -22071,7 +22062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.7, y: -10.44}
+  m_AnchoredPosition: {x: 130.2, y: -10.44}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1672385591
@@ -22120,7 +22111,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 999958894}
         m_TargetAssemblyTypeName: StartCavas, Assembly-CSharp
-        m_MethodName: NextDialouge
+        m_MethodName: NextDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
