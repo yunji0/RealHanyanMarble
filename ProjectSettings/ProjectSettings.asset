@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: 3E1D
   productName: realMarble
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -135,7 +135,10 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: fb3e671d5458abc4caba9d8944ee4571, type: 2}
+  - {fileID: 4177520579318366485, guid: aa6d275fe99a8b947b5bd390c39a0fda, type: 2}
+  - {fileID: 11400000, guid: dc8ace271cf3f234ba95667b5867630e, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -153,7 +156,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.realMarble
+    Android: com.3E1D.realMarble
   buildNumber:
     Standalone: 0
     iPhone: 0
