@@ -13,6 +13,6 @@ public class MenuControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(sun.position, Vector3.up, 1 * Time.deltaTime);
+        transform.RotateAround(sun.position, Vector3.up, 10 * Time.deltaTime);
     }
 }
