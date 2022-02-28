@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14208159, g: 0.40539783, b: 0.7555237, a: 1}
+  m_IndirectSpecularColor: {r: 0.14282492, g: 0.4070132, b: 0.758852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15102,8 +15102,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC548\uB155 \uC154\uD2C0\uCF55\uC5D0 \uC628\uAC78 \uD658\uC601\uD569\uB2C8\uB2E4\n\uC5EC\uAE30\uC11C
-    \uC624\uB978\uCABD\uC5D0 \uBCF4\uC774\uB294 \uD558\uC774\uBE44\uBE44\uB97C \uCC3E\uC544\uBCF4\uC138\uC694."
+  m_Text: "\uC548\uB155 \uC5B4\uC11C\uC640 !"
 --- !u!212 &1662582889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15179,7 +15178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.55, y: 8.76}
+  m_AnchoredPosition: {x: -33.4, y: 12.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1664228511
@@ -16506,13 +16505,13 @@ MonoBehaviour:
   sprite_DialogueBox: {fileID: 962754579}
   text_Dialogue: {fileID: 1662582888}
   dialogue:
-  - dialogue: "\uC5EC\uAE30\uB294 \uC154\uD2C0\uCF55\uC774\uC57C!"
+  - dialogue: "\uC5EC\uAE30\uB294 \uC154\uD2C0\uCF55\uC774\uC57C !"
   - dialogue: "\uC154\uD2C0\uBC84\uC2A4\uB97C \uD0C8 \uC218 \uC788\uB294 \uACF3\uC774\uC9C0"
   - dialogue: "\uC5EC\uAE30\uC5D0\uB3C4 \uD558\uC774\uBE44\uBE44\uAC00 \uC228\uC5B4\uC788\uB300\n\uC67C\uC190
       \uC870\uC774\uC2A4\uD2F1\uC73C\uB85C \uC6C0\uC9C1\uC77C \uC218 \uC788\uACE0\r\n\uAC00\uAE4C\uC774
-      \uB2E4\uAC00\uAC00 \uC624\uB978\uC190 \uC911\uC9C0 \uBC84\uD2BC\uC73C\uB85C
-      \uBE44\uBE44\uB97C \uC7A1\uC73C\uBA74 \uB3FC!"
-  - dialogue: "\uBE44\uBE44\uC8FC\uBCC0\uC73C\uB85C \uAC00\uBA74 \uBE44\uBE44\uC18C\uB9AC\uAC00
+      \uB2E4\uAC00\uAC00 \uC624\uB978\uC190 \uC911\uC9C0 \uBC84\uD2BC\uC73C\uB85C\n\uD558\uC774\uBE44\uBE44\uB97C
+      \uC7A1\uC73C\uBA74 \uB3FC!"
+  - dialogue: "\uD558\uC774\uBE44\uBE44\uC8FC\uBCC0\uC73C\uB85C \uAC00\uBA74\n\uD558\uC774\uBE44\uBE44\uC18C\uB9AC\uAC00
       \uB4E4\uB9B4\uAC70\uC57C!\r\n\uADF8\uB7FC \uCC3E\uC73C\uB7EC \uAC00\uBCF4\uC790!"
   StartButton: {fileID: 2071154123}
   NextButton: {fileID: 1934692742}

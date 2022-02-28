@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14296906, g: 0.4069005, b: 0.75866234, a: 1}
+  m_IndirectSpecularColor: {r: 0.14282492, g: 0.4070132, b: 0.758852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -30665,7 +30665,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126146180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 1}
   m_Children: []
   m_Father: {fileID: 1361968418}
@@ -30673,7 +30673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.55, y: 8.76}
+  m_AnchoredPosition: {x: -33.5, y: 13.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1128525495
@@ -37693,9 +37693,9 @@ MonoBehaviour:
       \n\uC774\uB8E8\uC5B4\uC838 \uC788\uC9C0"
   - dialogue: "\uC5EC\uAE30\uC5D0\uB3C4 \uD558\uC774\uBE44\uBE44\uAC00 \uC228\uC5B4\uC788\uB300\n\uC67C\uC190
       \uC870\uC774\uC2A4\uD2F1\uC73C\uB85C \uC6C0\uC9C1\uC77C \uC218 \uC788\uACE0\r\n\uAC00\uAE4C\uC774
-      \uB2E4\uAC00\uAC00 \uC624\uB978\uC190 \uC911\uC9C0 \uBC84\uD2BC\uC73C\uB85C
-      \uBE44\uBE44\uB97C \uC7A1\uC73C\uBA74 \uB3FC!"
-  - dialogue: "\uBE44\uBE44\uC8FC\uBCC0\uC73C\uB85C \uAC00\uBA74 \uBE44\uBE44\uC18C\uB9AC\uAC00
+      \uB2E4\uAC00\uAC00 \uC624\uB978\uC190 \uC911\uC9C0 \uBC84\uD2BC\uC73C\uB85C\n\uD558\uBE44\uBE44\uB97C
+      \uC7A1\uC73C\uBA74 \uB3FC!"
+  - dialogue: "\uD558\uC774\uBE44\uBE44\uC8FC\uBCC0\uC73C\uB85C \uAC00\uBA74\n\uD558\uC774\uBE44\uBE44\uC18C\uB9AC\uAC00
       \uB4E4\uB9B4\uAC70\uC57C!\n\uADF8\uB7FC \uCC3E\uC73C\uB7EC \uAC00\uBCF4\uC790! "
   StartButton: {fileID: 1169955215}
   NextButton: {fileID: 346541712}
@@ -46498,6 +46498,38 @@ MonoBehaviour:
   _headPoseRelativeOffsetRotation: {x: 0, y: 0, z: 0}
   _headPoseRelativeOffsetTranslation: {x: 0, y: 0, z: 0}
   profilerTcpPort: 32419
+  expandMixedRealityCapturePropertySheet: 0
+  enableMixedReality: 0
+  compositionMethod: 0
+  extraHiddenLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  extraVisibleLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  dynamicCullingMask: 1
+  externalCompositionBackdropColorRift: {r: 0, g: 1, b: 0, a: 1}
+  externalCompositionBackdropColorQuest: {r: 0, g: 0, b: 0, a: 0}
+  capturingCameraDevice: 0
+  flipCameraFrameHorizontally: 0
+  flipCameraFrameVertically: 0
+  handPoseStateLatency: 0
+  sandwichCompositionRenderLatency: 0
+  sandwichCompositionBufferedFrames: 8
+  chromaKeyColor: {r: 0, g: 1, b: 0, a: 1}
+  chromaKeySimilarity: 0.6
+  chromaKeySmoothRange: 0.03
+  chromaKeySpillRange: 0.06
+  useDynamicLighting: 0
+  depthQuality: 1
+  dynamicLightingSmoothFactor: 8
+  dynamicLightingDepthVariationClampingValue: 0.001
+  virtualGreenScreenType: 0
+  virtualGreenScreenTopY: 10
+  virtualGreenScreenBottomY: -10
+  virtualGreenScreenApplyDepthCulling: 0
+  virtualGreenScreenDepthTolerance: 0.2
+  mrcActivationMode: 0
   isInsightPassthroughEnabled: 0
   _trackingOriginType: 0
   usePositionTracking: 1
